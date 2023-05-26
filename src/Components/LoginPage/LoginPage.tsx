@@ -5,7 +5,7 @@ import styles from './LoginPage.module.css';
 export default function LoginPage() {
 
     const googleLogin = () => {
-        window.open("http://api.novaris.ai/auth/google", "_self");
+        window.open("https://demo.novaris.ai/api/auth/google", "_self");
     }
 
 

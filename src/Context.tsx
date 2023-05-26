@@ -8,7 +8,7 @@ export default function Context(props: any) {
     const [userObject, setUserObject] = useState<any>();
 
     useEffect(() => {
-        axios.get("http://localhost:4000/getuser", { withCredentials: true }).then((res: AxiosResponse) => {
+        axios.get("https://demo.novaris.ai/api/getuser", { withCredentials: true }).then((res: AxiosResponse) => {
             console.log(res);
             if (res.data) {
                 setUserObject(res.data);
